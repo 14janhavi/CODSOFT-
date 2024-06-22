@@ -1,0 +1,242 @@
+
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Body styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color:#f0f0f0; /* Light gray background */
+  color:black; /* Dark gray text */
+  transition: background-color 0.3s ease;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom,#f0f0f0, #dcdcdc);
+}
+h1,h2,h3{
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+/* Header styles */
+header {
+  background-color:black; /* Green header background */
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  padding-bottom: 20px;
+}
+
+
+/* Main styles */
+.main-outer {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff; /* White background for main content */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+}
+main-outer:hover{
+  box-shadow: 0 8px 20px rgba(0, 0,0,2 );
+  transform: translateY(-3px);
+}
+
+
+/* Section styles */
+section {
+  margin-bottom: 30px;
+}
+h3{
+  font-size: larger;
+  font-family:'Times New Roman', Times, serif
+}
+h2{
+  font-size: xx-large;
+  align-items: center;
+  padding-left: 10px;
+  font-family:'Times New Roman', Times, serif0
+}
+
+/* Name and bio section */
+.namebio {
+  background-color:#ccc ;
+  width: 70%;
+  float: left;
+  padding-right: 40px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.pfp {
+  width: 30%;
+  float: right;
+}
+
+.pfp img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+/* Contact details section */
+.contactdetails h1{
+  padding-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.contactdetails {
+  background-color: #f9f9f9; /* Light gray background */
+  padding: 0 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.contactdetails table {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contactdetails table td {
+  padding: 5px 10px;
+}
+/* Education section */
+.education {
+  background-color: #f9f9f9; /* Light gray background */
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-image:linear-gradient(45deg, rgba(0,0,0,0.1)25%,transparent 25%, transparent 75%,rgba(0,0,0,0.1)75%),linear-gradient(45deg,rgba(0,0,0,0.1)25%, transparent 25%, transparent 75%, rgba(0,0,0,0.1) 75%) ;
+}
+
+.education table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+
+.education th, .education td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.education th {
+  background-color:cadetblue; 
+  color: white;
+}
+
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+.skill{
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-image:linear-gradient(90deg, rgba(0,0,0,0.1)40%,transparent 25%);
+}
+.proj{
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-image:linear-gradient(90deg, rgba(0,0,0,0.1)40%,transparent 25%);
+}
+/* Links */
+.resume{
+   padding-left: 20px;
+}
+a {
+  color: cadetblue;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+  color:cadetblue;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  background-color: cadetblue;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color:cadetblue;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color:black;
+  color: #fff;
+  margin-top: 20px;
+}
+
+/* Navbar and Social Icons */
+.navbar-mainsocials {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.navbar-mainsocials .tooltip {
+  display: inline-block;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.navbar-mainsocials .tooltip a {
+  display: block;
+  text-decoration: none;
+}
+
+.navbar-mainsocials .tooltip img {
+  width: 30px;
+  height: 30px;
+  transform: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-outer {
+      padding: 10px;
+  }
+
+  header h1 {
+      font-size: 2rem;
+  }
+  .navbar-mainsocials .tooltip {
+      margin: 0 5px;
+  }
+}
