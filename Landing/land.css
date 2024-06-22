@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap");
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.logo a {
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.menu-button-container {
+    display: none;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.menu li a:hover {
+    background-color: #444;
+}
+
+.home {
+    background: url("burgerfries.jpg") no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.content {
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.mainfont {
+    font-size: 48px;
+    margin: 0 0 20px;
+    font-weight: 600;
+    font-family:'Times New Roman', Times, serif
+}
+
+.yellowColor {
+color:#ffc107 ;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 18px;
+    color: #fff;
+    background-color:  #ffc107;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #796732;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        display: none;
+    }
+
+    .menu-button-container {
+        display: block;
+    }
+
+    #menu-toggle:checked + .menu-button-container + .menu {
+        display: flex;
+    }
+
+    .menu-button {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        position: relative;
+    }
+
+    .menu-button::before,
+    .menu-button::after {
+        content: '';
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+    }
+
+    .menu-button::before {
+        top: -10px;
+    }
+
+    .menu-button::after {
+        top: 10px;
+    }
+}
